@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cutter - Video</title>
+	<link rel="stylesheet" href="../static/style.css">
+	<!-- <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"> -->
+</head>
+<body>
+
+<div class="container__logo">
+	<div class="logo__inner">
+		<h1 class="logo"><a href="{{url_for('render_videos')}}">cutter - videos</a></h1>
+	</div>
+</div>
+
+<form action="" method=post>
+	
+	<div class="container">
+		
+		<div class="container__inner">
+			
+			<input type="text" name='url' placeholder='Ссылка на видео'>
+
+			<br>
+			<br>
+
+			<label for="timecode_start">Начало: </label>
+			<input type="text" class='timecode_start' id='timecode_start' placeholder='1:37' name='timecode_start'>
+
+			<br>
+			<br>
+
+			<label for="timecode_end">Конец: </label>
+			<input type="text" name="timecode_end" id='timecode_end' placeholder='3:49' class='timecode_end'>
+			
+			<br>
+			<input type="submit" value='Принять'>
+
+			<p>{{output_information}}</p>
+		
+		</div>
+		
+	</div>
+</form>
+	
+</body>
+</html>

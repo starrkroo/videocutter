@@ -1,0 +1,5 @@
+Flask
+moviepy
+huepy
+beautifulsoup4
+pytube
